@@ -17,3 +17,15 @@ run:
 npm start
 ```
 The API will listen on http://localhost:3001
+
+#### API Endpoints
+
+| URL             |       Method       | Description                    |Payload                    | Headers                   |                    
+| ----------------| -------------------| ------------------------------ | --------------------------|---------------------------|
+| `/login`        | `POST`             | Allows an NGO to log in        |`{ id: string }`           |                           |
+| `/profile`      | `GET`              | Gets an especific NGO          |                           |`{ Authorization: ngo_id }`|
+| `/ngos`         | `GET`              | Lists NGOs                     |                           |                           |
+| `/ngos`         | `POST`             | Creates NGO                    |`{ name: String, email: string, whatsapp: string, city: string, uf: string }`| |
+| `/incidents`    | `GET`              | Lists incidents                |                           |                           |
+| `/incidents`    | `POST`             | Creates an incident            |`{ title: String, description: string, value: number }`|`{ Authorization: ngo_id }`|
+| `/incidents`    | `DELETE`           | Deletes an incident            |                           |`{ Authorization: ngo_id }`|
