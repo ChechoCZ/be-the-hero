@@ -29,3 +29,16 @@ The API will listen on http://localhost:3001
 | `/incidents`    | `GET`              | Lists incidents                |                           |                           |
 | `/incidents`    | `POST`             | Creates an incident            |`{ title: String, description: string, value: number }`|`{ Authorization: ngo_id }`|
 | `/incidents`    | `DELETE`           | Deletes an incident            |                           |`{ Authorization: ngo_id }`|
+
+
+## Frontend
+The front-end was developed using **React** with the following tools:
+ - Axios
+ - react-router-dom
+ - react-icons
+
+## Mobile
+The mobile app was developed using **React Native** with the following tools:
+ - Expo
+ - Axios
+ - Intl
